@@ -21,10 +21,10 @@ public class RunPerformanceTest {
     public static Map<String, Measures> results;
 
     public static void main(String[] args) throws Exception {
-        runPerformanceTestForClass(FindMaxNumberListTest.class, TestType.LIST);
+        //runPerformanceTestForClass(FindMaxNumberListTest.class, TestType.LIST);
         runPerformanceTestForClass(ActionForEachTest.class, TestType.LIST);
-        runPerformanceTestForClass(FindMaxNumberArrayUnboxedTest.class, TestType.ARRAY_UNBOXED);
-        runPerformanceTestForClass(FindMaxNumberArrayBoxedTest.class, TestType.ARRAY_BOXED);
+        //runPerformanceTestForClass(FindMaxNumberArrayUnboxedTest.class, TestType.ARRAY_UNBOXED);
+        //runPerformanceTestForClass(FindMaxNumberArrayBoxedTest.class, TestType.ARRAY_BOXED);
     }
 
     private static void runPerformanceTestForClass(Class testClass, TestType type) {

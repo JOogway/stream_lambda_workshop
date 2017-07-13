@@ -29,8 +29,10 @@ public class ActionForEachTest extends BaseTest implements TestMethods {
     @Override
     @PerformanceTest
     public void forEach() {
+        int i = 0;
         for(Integer integer : list){
-            integer+=100;
+            list.set(i, integer + 100);
+            i++;
         }
     }
 
