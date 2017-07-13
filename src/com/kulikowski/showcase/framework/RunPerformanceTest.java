@@ -16,7 +16,7 @@ import java.util.Map;
  * Created by Kasper on 13.07.2017.
  */
 public class RunPerformanceTest {
-    private static final int NUMBER_OF_REPEATS = 20;
+    private static final int NUMBER_OF_REPEATS = 10;
 
     public static Map<String, Measures> results;
 
