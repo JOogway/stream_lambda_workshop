@@ -5,6 +5,9 @@ import com.kulikowski.playground.utils.doggos.DogCreator;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Created by Kasper on 15.07.2017.
