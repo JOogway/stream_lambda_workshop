@@ -4,6 +4,8 @@ import com.kulikowski.showcase.bonus.performance.framework.annotations.Performan
 import com.kulikowski.showcase.bonus.performance.utils.BaseTest;
 import com.kulikowski.showcase.bonus.performance.utils.TestMethods;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ListIterator;
 
 /**
@@ -15,7 +17,8 @@ public class ActionForEachTest extends BaseTest implements TestMethods {
     @Override
     @PerformanceTest
     public void stream() {
-        list.stream().forEach(integer -> integer += 100);
+        List<Integer> result = new ArrayList<>();
+        list.stream().forEach(integer -> result.add(integer+100));
     }
 
     @Override
